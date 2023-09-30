@@ -7,10 +7,7 @@ const config: Config = {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        colors: {
-          primary: "#FFFFFF",
-          secondary: "#1A181E"
-        },
+       
         extend: {
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -19,6 +16,10 @@ const config: Config = {
             },
             backgroundColor: {
                 sidebar: "#1E2640",
+            },
+            colors: {
+                primary: "#FFFFFF",
+                secondary: "#1A181E"
             },
         },
     },
