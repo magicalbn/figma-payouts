@@ -18,6 +18,7 @@ const Profile = () => {
                 <img
                     className=" rotate-90 w-[24px] h-[24px]"
                     src="chevron-right.svg"
+                    alt="arrow"
                 />
             </div>
         </div>
