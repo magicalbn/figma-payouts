@@ -18,12 +18,12 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body >
-                <div className="flex min-h-screen fixed w-screen">                   
+            <body>
+                <div className="flex h-screen fixed w-screen">
                     <Sidebar />
-                    <div className="flex flex-col bg-blue-300 w-full">
-                      <Navbar />
-                        {children}
+                    <div className="flex flex-col w-full">
+                        <Navbar />
+                        <div className="overflow-auto">{children}</div>
                     </div>
                 </div>
             </body>

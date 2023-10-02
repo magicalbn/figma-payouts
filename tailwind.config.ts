@@ -7,7 +7,6 @@ const config: Config = {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-       
         extend: {
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -16,10 +15,14 @@ const config: Config = {
             },
             backgroundColor: {
                 sidebar: "#1E2640",
+                payout: "#146EB4",
             },
             colors: {
                 primary: "#FFFFFF",
-                secondary: "#1A181E"
+                secondary: "#1A181E",
+            },
+            animation: {
+                "spin-slow": "spin 3s linear infinite",
             },
         },
     },

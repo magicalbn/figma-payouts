@@ -1,7 +1,8 @@
+import Overview from "@/components/overview";
 import React from "react";
 
 const Payouts = () => {
-    return <div>Payouts</div>;
+    return <Overview />;
 };
 
 export default Payouts;

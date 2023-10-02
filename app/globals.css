@@ -19,9 +19,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   font-family: Galano Grotesque, system-ui;
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: #fafafa;
 }
 
 
@@ -41,6 +39,6 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
 }
