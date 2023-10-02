@@ -23,7 +23,9 @@ export default function RootLayout({
                     <Sidebar />
                     <div className="flex flex-col w-full">
                         <Navbar />
-                        <div className="overflow-auto">{children}</div>
+                        <div className="overflow-auto ml-[60px] sm:ml-0">
+                            {children}
+                        </div>
                     </div>
                 </div>
             </body>
