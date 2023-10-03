@@ -35,7 +35,7 @@ const Sidebar = () => {
                 ease: "easeIn",
                 duration: 0,
             }}
-            className={`h-screen ${
+            className={`h-[100svh] ${
                 expandSidebar ? "w-[200px] sm:w-[250px]" : "w-auto"
             }  bg-sidebar  flex-col py-4 p-2 sm:p-5 text-primary flex transition-all duration-300 ease-in absolute sm:relative`}
         >
