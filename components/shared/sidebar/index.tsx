@@ -14,10 +14,22 @@ const Sidebar = () => {
     return (
         <motion.div
             initial={{
-                width: expandSidebar ? "250px" : isMobile ? "56px" : "80px",
+                width: expandSidebar
+                    ? isMobile
+                        ? "200px"
+                        : "250px"
+                    : isMobile
+                    ? "56px"
+                    : "80px",
             }}
             animate={{
-                width: expandSidebar ? "250px" : isMobile ? "56px" : "80px",
+                width: expandSidebar
+                    ? isMobile
+                        ? "200px"
+                        : "250px"
+                    : isMobile
+                    ? "56px"
+                    : "80px",
             }}
             transition={{
                 ease: "easeIn",

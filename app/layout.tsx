@@ -19,7 +19,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <div className="flex h-screen fixed w-screen">
+                <div className="flex h-[100svh] fixed w-screen">
                     <Sidebar />
                     <div className="flex flex-col w-full">
                         <Navbar />
