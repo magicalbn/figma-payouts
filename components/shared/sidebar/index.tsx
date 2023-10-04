@@ -4,10 +4,13 @@ import Profile from "./profile";
 import SideMenu from "./sidemenu";
 import Credits from "./credits";
 import { motion } from "framer-motion";
-import { isMobile } from "react-device-detect";
+import { useMediaQuery } from "react-responsive";
 
 const Sidebar = () => {
     const [expandSidebar, setExpandSidebar] = useState<boolean>(false);
+    const isDesktop = useMediaQuery({
+        query: "(min-width: 640px)",
+    });
     const toggleExpandSidebar = () => {
         setExpandSidebar(!expandSidebar);
     };
@@ -15,26 +18,28 @@ const Sidebar = () => {
         <motion.div
             initial={{
                 width: expandSidebar
-                    ? isMobile
-                        ? "200px"
-                        : "250px"
-                    : isMobile
-                    ? "56px"
-                    : "80px",
+                    ? isDesktop
+                        ? "250px"
+                        : "200px"
+                    : isDesktop
+                    ? "80px"
+                    : "56px",
             }}
             animate={{
                 width: expandSidebar
-                    ? isMobile
-                        ? "200px"
-                        : "250px"
-                    : isMobile
-                    ? "56px"
-                    : "80px",
+                    ? isDesktop
+                        ? "250px"
+                        : "200px"
+                    : isDesktop
+                    ? "80px"
+                    : "56px",
             }}
             transition={{
                 ease: "easeIn",
                 duration: 0,
             }}
+            onHoverStart={() => setExpandSidebar(true)}
+            onHoverEnd={() => setExpandSidebar(false)}
             className={`h-[100svh] ${
                 expandSidebar ? "w-[200px] sm:w-[250px]" : "w-auto"
             }  bg-sidebar  flex-col py-4 p-2 sm:p-5 text-primary flex transition-all duration-300 ease-in absolute sm:relative`}
